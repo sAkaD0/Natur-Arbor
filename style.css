@@ -23,32 +23,22 @@ header{
     align-items: center;
 }
 
-header div a{
-    display:grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
 #logo {
     width: 100px;
     margin :0;
-    padding:20px 0;
-    color:#FFFFFF
+    color:#FFFFFF;
+    padding-top :20px;
 }
 
 header h1{
-    display:none;
+    color:#FFFFFF;
+    padding-bottom:20px
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-header nav ul li ul{
-    display:none;
 }
 
 header nav ul li a {
@@ -67,19 +57,8 @@ header nav ul li a:hover, header nav ul li a:active{
     color: #00120b;
 }
 
-header nav ul ul{
-    display:none;
-}
-
 main{
     padding:20px;
-}
-
-main h2{
-    text-transform: uppercase;
-    padding-bottom:5px;
-    margin-bottom:0;
-    color:#075016;
 }
 
 #TopPage{
@@ -87,13 +66,17 @@ main h2{
     grid-template-columns: 1fr;
 }
 
-#TopPage img{
-    display: none;
+main h2{
+    text-transform: uppercase;
+    padding-bottom:5px;
+    border-bottom:2px solid #075016;
+    padding-bottom:5px;
+    margin-bottom:0;
+    color:#075016;
 }
 
-
 main article p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.8rem;
     margin-bottom: 5px;
 }
@@ -118,52 +101,48 @@ main article p{
 #TopPageAside div a{
     color:#FFFFFF;
 }
-
-
-main #qualités {
-    display:grid ;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin-top: 50px;
+/*Image de la page d'accueil*/
+#TopPage img{
+    display: none;
 }
+/*Listes des qualités*/
+main #qualités{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap:50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/*Qualités 1 par 1*/
 main aside div{
-    width: 75%;
+    width: 50%;
     text-align: center;
     background-color: #eeeeee;
     border-radius: 10px;
     height: 0;
     padding-bottom:50% ;
 }
-
-
+/*Icones Qualités*/
 main aside div img{
     width: 15%;
 }
-
+/*Titre des qualités*/
 main aside div h3{
     font-size:75%;
 }
-
-main h2{
-    text-transform:uppercase;
-    font-size:1.6rem;
-    border-bottom:2px solid #075016;
-    padding-bottom:5px;
-    margin-bottom:0;
-}
-
+/*Articles de la page*/
 main section article p{
     font-size: 1.2rem;
     line-height: 1.8rem;
     margin-bottom: 5px;
 }
-
-
+/*Listes des images*/
 main section #Images{
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
-
+/*Div Limitant les images*/
 main section div {
     text-decoration: none;
     display: block;
@@ -174,12 +153,11 @@ main section div {
     padding-bottom:90%;
     background-color: #FFFFFF;
 }
-
+/*Images prenant la place de la div*/
 main section div img{
     width: 100%;
     border-radius: 10px;
 }
-
 
 footer{
     background-color: #075016;
@@ -273,7 +251,6 @@ footer li a:hover{
         padding-bottom: 15px;
     }
 
-
     #TopPageAside div{
         padding:40px 0px 65px 0px;
         width: 300px;
@@ -288,8 +265,11 @@ footer li a:hover{
     }
 
     main #qualités{
-        padding-top: 50px;
-        padding-bottom:50px ;
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        justify-items: center;
+        margin-top: 50px;
+        grid-template-rows: 300px;
     }
 
     main #qualités div h3{
