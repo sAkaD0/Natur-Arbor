@@ -1,0 +1,110 @@
+@font-face {
+    font-family:"Lato";
+    src: url("fonts/Lato-Regular.ttf");
+}
+
+body{
+    margin:0; 
+    font-family: "Lato","Calibri", sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    color:#075016;
+    
+}
+
+header{
+    background-color: #075016;
+    padding-bottom: 30px;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    margin :0;
+    color:#FFFFFF;
+    padding-top :20px;
+}
+
+header h1{
+    color:#FFFFFF;
+    padding-bottom:20px
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration:none;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    padding: 15px;
+    display: block;
+    text-align:center;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+
+header nav ul li a:hover, header nav ul li a:active{
+    color: #00120b;
+}
+
+header{
+    padding-bottom:0;
+    display: grid;
+    grid-template-columns: 200px 125px 1fr ;
+    align-items: center;
+    justify-items: end;
+}
+
+header h1{
+    display:block;
+    color:#FFFFFF;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+#logo{
+    padding:10px 20px;
+}
+
+header nav ul{
+    padding: 30px ;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+@media screen and (min-width: 1024px) {
+    header{
+        padding-bottom:0;
+        display: grid;
+        grid-template-columns: 200px 125px 1fr ;
+        align-items: center;
+        justify-items: end;
+    }
+
+    header h1{
+        display:block;
+        color:#FFFFFF;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    #logo{
+        padding:10px 20px;
+    }
+
+    header nav ul{
+        padding: 30px ;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
