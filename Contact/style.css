@@ -81,6 +81,23 @@ header nav ul{
     grid-template-columns: repeat(4, 1fr);
 
 }
+main, main figure{
+    margin: 0;
+    padding: 0;
+}
+
+main figure img{
+    width:100%;
+    filter : blur(4px);
+    
+}
+
+main article div{
+    align-items: center;
+    z-index: 100;
+    background-color: #FFFFFF;
+    margin-top: -100px;
+}
 
 footer{
     background-color: #075016;

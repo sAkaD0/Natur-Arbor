@@ -30,7 +30,7 @@ header{
     padding-top :20px;
 }
 
-header h1{
+header a{
     color:#FFFFFF;
     padding-bottom:20px
 }
@@ -137,14 +137,6 @@ main section article p{
     line-height: 1.8rem;
     margin-bottom: 5px;
 }
-main section h3{
-    font-style: italic;
-    padding-bottom:5px;
-    padding-bottom:5px;
-    margin-bottom:0;
-    color:#075016;
-}
-
 /*Listes des images*/
 main section #Images{
     display:grid;
